@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise Web Portal | 業務システム開発・Webアプリケーション</title>
+    <meta name="description" content="業務システム開発・Webアプリケーション開発を行うソフトウェア開発組織を想定したサンプルサイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+        }
+        header {
+            background-color: #1f2933;
+            color: #fff;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 16px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            padding: 60px 24px;
+            background: linear-gradient(135deg, #1f2933, #3b82f6);
+            color: #fff;
+            text-align: center;
+        }
+        .hero h1 {
+            margin-bottom: 12px;
+            font-size: 28px;
+        }
+        .hero p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        .hero .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #1f2933;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px;
+            background-color: #fff;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 8px;
+        }
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+        .service-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 16px;
+            background-color: #fafafa;
+        }
+        .service-card h3 {
+            margin-top: 0;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+        }
+        form {
+            display: grid;
+            gap: 12px;
+            max-width: 480px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #d1d5db;
+            font-size: 14px;
+        }
+        textarea {
+            min-height: 120px;
+        }
+        input[type="submit"] {
+            width: 160px;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            background-color: #3b82f6;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        input[type="submit"]:hover {
+            background-color: #2563eb;
+        }
+        footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 12px;
+            color: #6b7280;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Enterprise Web Portal</div>
+    <nav>
+        <a href="#services">事業内容</a>
+        <a href="#projects">開発実績</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>業務システム開発・Webアプリケーションのエンジニアリングポータル</h1>
+    <p>業務効率化、データ活用、Webシステム開発を行うソフトウェア開発組織を想定したサンプルサイトです。</p>
+    <a href="#projects" class="btn">開発実績を見る</a>
+</section>
+
+<main class="container">
+
+    <section id="services">
+        <h2>事業内容</h2>
+        <div class="services-list">
+            <div class="service-card">
+                <h3>業務システム開発</h3>
+                <p>Java を中心とした業務システム開発。販売管理、勤怠管理、医療系、公共系など、業務ロジックを重視した開発を想定しています。</p>
+            </div>
+            <div class="service-card">
+                <h3>Webアプリケーション開発</h3>
+                <p>HTML / CSS / JavaScript を用いたフロントエンドと、Java を用いたバックエンドによるWebアプリ開発を想定しています。</p>
+            </div>
+            <div class="service-card">
+                <h3>インフラ・運用保守</h3>
+                <p>システムの安定稼働を支えるインフラ設計・運用保守を行う想定です。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>開発実績（サンプル）</h2>
+        <p>業務システム開発を想定した架空の案件一覧です。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>案件名</th>
+                    <th>業種</th>
+                    <th>技術要素</th>
+                    <th>概要</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>勤怠管理Webシステム</td>
+                    <td>人事・労務</td>
+                    <td>Java / HTML / CSS / MySQL</td>
+                    <td>出退勤管理、残業申請、承認フローをWeb上で行う社内向けシステム。</td>
+                </tr>
+                <tr>
+                    <td>医療予約管理システム</td>
+                    <td>医療</td>
+                    <td>Java / Spring / HTML / JavaScript</td>
+                    <td>外来予約、診療スケジュール管理、患者情報参照を行うWebアプリ。</td>
+                </tr>
+                <tr>
+                    <td>問い合わせ管理システム</td>
+                    <td>コールセンター</td>
+                    <td>Java / HTML / CSS</td>
+                    <td>問い合わせ内容の登録・検索・ステータス管理を行う社内向けシステム。</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>開発のご相談を想定したサンプルフォームです。（実際には送信されません）</p>
+        <form action="#" method="post">
+            <div>
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" placeholder="例）山田 太郎">
+            </div>
+            <div>
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com">
+            </div>
+            <div>
+                <label for="message">お問い合わせ内容</label>
+                <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="送信する">
+            </div>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Enterprise Web Portal (Sample). All rights reserved.</p>
+</footer>
+
+</body>
+</html>
